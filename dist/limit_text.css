@@ -1,20 +1,24 @@
 .limited-text-container {
   position: relative;
 }
+
 .limited-text-container .hover-text {
   position: absolute;
   bottom: 40px;
-  right: 30px;
+  /*right: 30px;*/
   display: none;
+  /*display: block;*/
   background-color: #ddd;
   box-shadow: 5px 5px 5px #888888;
   padding: 10px;
   width: 60%;
 }
+
 .limited-text-container .see-more {
   margin-left: 10px;
   color: rgb(0, 100, 238);
 }
-.limited-text-container .see-more:hover + .hover-text {
+
+.limited-text-container .see-more:hover+.hover-text {
   display: block;
 }

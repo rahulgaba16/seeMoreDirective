@@ -1,0 +1,39 @@
+<!doctype html>
+<html ng-app="demo">
+  <head>
+    <meta charset="utf-8">
+    <title>AngularJS directive demo</title>
+    <!-- TODO: Include Angular from Bower components -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular.min.js"></script>
+    <!-- <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular-sanitize.js"></script> -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.css">
+    <link rel="stylesheet" href="./dist/limit_text.css">
+    <style>
+    .usage {
+      padding: 10px;
+      border: 1px solid rgba(0, 0, 0, 0.09);
+      border-radius: 5px;
+    }
+    </style>
+    <link rel="stylesheet" href="./dist/limit_text.css">
+  </head>
+  <body ng-controller="main as mainCtrl">
+    <div class="container">
+      <h1 class="text-muted">Demo</h1>
+
+      <div class="usage row">
+        <h4>Simple usage</h4>
+        <p>This is a simple usage of the directive</p>
+        <pre>
+          &lt;limit-text-directive limit-char='200' text-to-limit='"Lorem Ipsum is simply dummy text of the printing and typesetting industry."'/&gt;
+        </pre>
+        <h4>Results</h4>
+        <!-- <limit-text-directive limit-char='40' text-to-limit='"Dummy text yolo fdhsgfhjdshgfjdsgjhfds dsgfjhds fjdshgf"'></limit-text-directive> -->
+        <limit-text-directive limit-char='200' text-to-limit='"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."'></limit-text-directive>
+      </div>
+    </div>
+    <script src="./demo.js"></script>
+    <script src="./dist/limittextdirective.js"></script>
+
+  </body>
+</html>
