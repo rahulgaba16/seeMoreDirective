@@ -1,0 +1,21 @@
+{
+  "name": "see-more-directive",
+  "version": "0.0.1",
+  "authors": [
+    "Rahul Gaba <rahulgaba16@gmail.com>"
+  ],
+  "description": "A simple angular directive to limit text and add see more to view the whole text.",
+  "main": ["dist/limit_text.css", "dist/limittextdirective.js"],
+  "license": "MIT",
+  "private": false,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular": "~1.4.0"
+  }
+}
